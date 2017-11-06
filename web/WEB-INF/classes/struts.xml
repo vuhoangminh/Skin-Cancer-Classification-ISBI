@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.multipart.maxSize" value="10000000" />
+
+    <package name="myPakage" namespace="/" extends="struts-default">
+
+        <action name="upload" class="com.skincancersegmentation.ImageUpload" method ="imageProcess">
+            <result name="success">successFileUpload.jsp</result>
+            <result name="error">fileUploadError.jsp</result>
+        </action>
+        
+        <!--<action name="loginurl" class="com.skincancersegmentation.loginActionClass" method="userLogin">-->
+            <!--<result name="success">fileUpload.jsp</result>-->
+            <!--<result name="error">loginError.jsp</result>-->
+        <!--</action>-->
+
+        <action name="forgetPWD" class="com.skincancersegmentation.ForgetPassword" method="sendPassword">
+            <result name="success">forgetpasswordSuccess.jsp</result>
+            <result name="error">forgetpasswordError.jsp</result>
+        </action>
+
+        <action name="createAcount" class="com.skincancersegmentation.createAccountActionClass" method="userAccountCreate">
+            <result name="success">successAcountCreated.jsp </result>
+            <result name="error">accountCreationError.jsp</result>
+        </action>
+
+        <!--contact us-->
+        <action name="contactUsAction" class="com.skincancersegmentation.contactUsActionClass" method="contactUsMessageSender">
+            <result name="success">contactUsSuccess.jsp </result>
+            <result name="error">contactUsError.jsp</result>
+        </action>
+
+
+    </package>
+</struts>
