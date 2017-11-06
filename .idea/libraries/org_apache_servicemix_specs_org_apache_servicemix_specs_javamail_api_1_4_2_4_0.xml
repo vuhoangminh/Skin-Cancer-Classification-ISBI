@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.apache.servicemix.specs:org.apache.servicemix.specs.javamail-api-1.4:2.4.0" type="repository">
+    <properties maven-id="org.apache.servicemix.specs:org.apache.servicemix.specs.javamail-api-1.4:2.4.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/specs/org.apache.servicemix.specs.javamail-api-1.4/2.4.0/org.apache.servicemix.specs.javamail-api-1.4-2.4.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/osgi/org.osgi.core/4.3.0/org.osgi.core-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
